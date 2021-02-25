@@ -26,3 +26,8 @@ Route::get('/contacts', function () {
 })->name('contact');
 
 Route::post('/contact/submit', 'App\Http\Controllers\ContactController@submit')->name('contact-form');
+Route::get('/contact/all', 'App\Http\Controllers\ContactController@allData')->name('contact-data');
+Route::get('/contact/all/{id}', 'App\Http\Controllers\ContactController@show')->name('show-one-contact');
+Route::get('/contact/all/{id}/update', 'App\Http\Controllers\ContactController@updateMessage')->name('update-contact');
+Route::post('/contact/all/{id}/update/submit', 'App\Http\Controllers\ContactController@updateMessageSubmit')->name('update-submit');
+Route::get('/contact/all/{id}/delete', 'App\Http\Controllers\ContactController@delete')->name('delete-contact');

@@ -4,5 +4,6 @@
         <a class="p-2 text-dark" href="{{ route('home') }}">home</a>
         <a class="p-2 text-dark" href="{{ route('about') }}">about</a>
         <a class="p-2 text-dark" href="{{ route('contact') }}">contact</a>
+        <a class="p-2 text-dark" href="{{ route('contact-data') }}">all contacts</a>
     </nav>
 </header>
